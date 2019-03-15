@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <title>6. Composing components</title>
+</head>
+<body>
+  <div id="app">
+    <div class="container mt-5">
+      <div class="row justify-content-md-center align-items-center">
+        <div class="col-md-auto">
+          
+          <!-- Card starts-->
+
+          <div class="card" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1552560889-d35e4fc57271?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Giving a powerful speech</h5>
+              <p class="card-text">Firefighters are protesting in order to get an increase in salaries</p>
+              <a href="#" class="btn btn-primary">See full article</a>
+            </div>
+          </div>
+
+          <!-- Card ends -->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const app = new Vue({
+      el: "#app",
+      data: {}
+    });
+  </script>
+</body>
+</html>
