@@ -17,9 +17,9 @@
           <!-- Card starts-->
 
           <div class="card" style="width: 18rem;">
-            <img src="https://images.unsplash.com/photo-1552560889-d35e4fc57271?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top">
+            <img v-bind:src="article.image" class="card-img-top">
             <div class="card-body">
-              <h5 class="card-title">Giving a powerful speech</h5>
+              <h5 class="card-title">{{ article.title }}</h5>
               <p class="card-text">Firefighters are protesting in order to get an increase in salaries</p>
               <a href="#" class="btn btn-primary">See full article</a>
             </div>
@@ -31,7 +31,15 @@
     </div>
   </div>
   <script>
-    // Vue.js goes in here
+    const app = new Vue({
+      el: "#app",
+      data: {
+        article: {
+          image: "https://images.unsplash.com/photo-1552560889-d35e4fc57271?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+          title: "Giving a powerful speech"
+        }
+      }
+    })
   </script>
 </body>
 </html>
